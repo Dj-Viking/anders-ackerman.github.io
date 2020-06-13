@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+    font-family: "Verdana", Geneva, sans-serif;
+  }
+
+header{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+.flex-row{
+  display: flex;
+}
+
+.hero{
+  padding: 300px;
+  background-image: url('../images/open-road.jpg');
+  background-position: 80%;
+  background-size: cover;
+  background-attachment: fixed;
+}
