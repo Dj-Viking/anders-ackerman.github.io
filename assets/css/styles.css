@@ -1,7 +1,8 @@
 :root{
   --primary-color: white;
-  --secondary-color: #3E92CC;
+  --secondary-color: #4292cccb;
   --tertiary-color: #90708C;
+  
 }
 
 * {
@@ -13,6 +14,7 @@
 
 body{
   z-index: 9999;
+  background-color: var(--secondary-color);
 }
 
 header{
@@ -30,7 +32,7 @@ header{
 }
 
 header h1{
-  padding: 10px;
+  padding: 11px 10px;
   color: var(--primary-color);
   background-color: var(--secondary-color);
   border-radius: 25px;
@@ -42,7 +44,7 @@ header h1:hover{
   color: var(--secondary-color);
   transition: 1s;
   background-color: var(--primary-color);
-  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   margin-left: 100px;
 }
@@ -136,3 +138,32 @@ header div{ /*secondary-background container*/
   background-attachment: fixed;
 }
 
+.about-me{
+  padding: 100px 60px;
+}
+
+.about-me h2{
+  color: var(--primary-color);
+  text-shadow: 0 0 10px black;
+  margin-right: 0;
+  text-align: right;
+  background-color: var(--tertiary-color);
+  padding: 30px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.about-me img{
+  margin-right: 60px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.border-right{
+  border-right: 3px solid var(--tertiary-color);
+  margin-right: 30px;
+}
+
+.about-me p{
+  color: var(--primary-color);
+}
