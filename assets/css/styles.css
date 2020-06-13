@@ -230,22 +230,84 @@ header div{ /*secondary-background container*/
   border-bottom-right-radius: 25px;
 }
 
+/* my work grid start */
 .work-grid{
   display: grid;
-  
+  gap: 10px;
+  grid-template-columns: repeat(3, 15rem);
+  align-items: start;
 }
 
 .grid-item-runbuddy{
   display: flex;
+  width: 50%;
+ 
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.grid-item-meetthereplacements{
+  display: flex;
+  width: 50%;
+
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.grid-item-horiseonrefactor{
+  display: flex;
+  width: 50%;
+
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.runbuddy-img{
+  height: 100px;
+  transition: 1s;
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+.runbuddy-img:hover{
+  transition: 1s;
+  height: 200px;
+  width: 200px;
+}
+
+.meetthereplacements-img{
+  height: 100px;
+  transition: 1s;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.meetthereplacements-img:hover{
+  transition: 1s;
+  height: 200px;
+  width: 200%;
+}
+
+.horiseonrefactor-img{
+  height: 100px;
+  transition: 1s;
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+.horiseonrefactor-img:hover{
+  transition: 1s;
+  height: 200px;
+  width: 200px;
 }
 
 .work .border-right{
   margin-left: 55px;
 }
 
-.grid-item-runbuddy{
-  width: 50%;
-}
 /* work section styling end */
 
 /* contact section styling start */
@@ -275,7 +337,7 @@ header div{ /*secondary-background container*/
   border-radius: 25px;
   z-index: 9999;
   text-shadow: 0 0 10px #90708C;
-  transition: 1s;
+  transition: 1s; /*transition back from the hover state */
 }
 
 .contact h2:hover{
