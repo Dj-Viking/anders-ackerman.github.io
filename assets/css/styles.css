@@ -21,7 +21,7 @@ header{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-image: url('../images/open-road.jpg');
+  background-image: url('../images/open-road-resized.jpg');
   background-position: 80%;
   background-size:cover;
   background-attachment: fixed;
@@ -116,7 +116,7 @@ header div{ /*secondary-background container*/
 .secondary-background{
   content: "";  
   padding: 30px 30px 35px 1000px;  
-  background-image: url('../images/mountains.jpg');
+  background-image: url('../images/mountains-resized.jpg');
   background-position: 50%;
   background-size:cover;
   background-attachment: fixed;
@@ -134,7 +134,7 @@ header div{ /*secondary-background container*/
 
 .hero{
   padding: 300px;
-  background-image: url('../images/open-road.jpg');
+  background-image: url('../images/open-road-resized.jpg');
   background-position: 80%;
   background-size: cover;
   background-attachment: fixed;
