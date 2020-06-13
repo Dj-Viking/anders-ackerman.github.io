@@ -128,6 +128,8 @@ header div{ /*secondary-background container*/
 
 .flex-row{
   display: flex;
+  border-bottom: 3px solid var(--tertiary-color);
+  padding-bottom: 60px;
 }
 
 .hero{
@@ -160,10 +162,112 @@ header div{ /*secondary-background container*/
 }
 
 .border-right{
-  border-right: 3px solid var(--tertiary-color);
-  margin-right: 30px;
+  border-right: 10px ridge var(--tertiary-color);
+  margin-right: 60px;
 }
 
 .about-me p{
   color: var(--primary-color);
+}
+
+.work {
+  padding: 0px 60px 0 60px;
+  margin: 0 60px;
+  margin-top: 60px;
+}
+
+.contact {
+  padding: 100px 30px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.contact span{ /*secondary-background container*/
+  
+  background-position: 80%;
+  z-index: 9998;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.contact h2{
+  padding: 11px 10px;
+  margin-top: 5px;
+  margin-right: 150px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  z-index: 9999;
+  text-shadow: 0 0 10px #90708C;
+}
+
+.contact h2:hover{
+  color: var(--secondary-color);
+  transition: 1s;
+  background-color: var(--primary-color);
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-left: 0px;
+}
+
+.contact nav{
+  margin-left: 100px;
+}
+
+.contact a{
+  padding: 0 30px;
+  text-decoration: none;
+  color: var(--primary-color);
+  
+}
+
+.contact nav ul li{
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  border-left: 10px;
+  margin: 0 10px;
+}
+
+.contact nav ul li:hover{
+  transition: 1s;
+  background-color: var(--primary-color);
+}
+
+.contact nav ul li a:hover{
+  color: var(--secondary-color);
+  transition: .5s;
+}
+
+.contact h2 a{
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.contact nav{
+  padding-top: 10px;
+  z-index: 9999;
+}
+
+.contact nav ul {
+  padding: 10px;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  z-index: 9999;
+}
+
+.contact nav ul li a {
+  padding: 0 30px;
+  margin: 0;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(245, 3, 3, 0.507);
+  z-index: 9999;
 }
