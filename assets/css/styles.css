@@ -510,23 +510,28 @@ footer p{
 
 @media screen and (max-width: 980px) {
   header{
-    padding-bottom: 0;
+    
     justify-content: center;
     position: relative;
   }
 
   .contact-span{
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative;
+    margin: 0;
+    padding-left: 35px;
+    padding-right: 35px;
   }
+
 
   .about-me img{
     margin-right: 0;
   }
 
+  .about-me .flex-row p{
+    padding-top: 30px;
+    
+  }
   .flex-row {
-    padding-bottom: 0;
+    
     justify-content: center;
     position: relative;
     flex-wrap: wrap;
