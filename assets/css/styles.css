@@ -25,7 +25,7 @@
 }
 
 .work-flex-row{
-  display: flex; 
+  display: flex;
 }
 /* flex row declarations */
 
@@ -63,11 +63,11 @@ header h1{
 
 header h1:hover{
   color: var(--secondary-color);
-  transition: 1s;
   background-color: var(--primary-color);
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   margin-left: 100px;
+  transition: 1s;
   
 }
 
@@ -147,8 +147,8 @@ header div{ /*secondary-background container*/
   opacity: .6;
   z-index: 9998;
   border-radius: 25px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 35px;
+  margin-right: 35px;
   
 }
 /* header styling end */
@@ -446,3 +446,16 @@ header div{ /*secondary-background container*/
   transition: .5s;
 }
 /* contact section styling end */
+
+/* footer styling start */
+
+footer{
+  display: flex;
+  padding: 20px 35px;
+  justify-content: center;
+}
+
+footer p{
+  
+  color: var(--primary-color);
+}
