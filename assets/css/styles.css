@@ -27,6 +27,8 @@
 .work-flex-row{
   display: flex;
 }
+
+
 /* flex row declarations */
 
 /* body */
@@ -155,11 +157,36 @@ header div{ /*secondary-background container*/
 /* hero section styling start */
 .hero{
   display: flex;
-  padding: 300px;
+  height: 100%;
   background-image: url('../images/open-road-resized.jpg');
   background-position: 80%;
   background-size: cover;
+  width: 100%;
   background-attachment: fixed;
+  margin: 0;
+  position: relative;
+}
+
+.hero-flex{
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  
+}
+
+.hero img{ /* this is to create a container space because the background was overflowing and wouldnt appear unless i added padding to the div containing no content or space, background would only appear if i placed padding but this would cause overflow in different media queries */
+  display: flex;
+  height: 100%;
+  background-image: url('../images/open-road-resized.jpg');
+  background-position: 80%;
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+  margin: 0;
+  position: relative;
+  display: hidden;
+  opacity: 0;
 }
 /* hero section styling end */
 
@@ -210,6 +237,8 @@ header div{ /*secondary-background container*/
   padding-top: 60px;
   margin: 0 60px;
   margin-top: 0px;
+  padding-bottom: 60px;
+  border-bottom: 3px solid var(--tertiary-color);
 }
 
 /* work row label container */
@@ -510,9 +539,12 @@ footer p{
 
 @media screen and (max-width: 980px) {
   header{
-    
     justify-content: center;
     position: relative;
+  }
+
+  .hero{
+    width: 100%;
   }
 
   .contact-span{
@@ -562,6 +594,10 @@ footer p{
   }
   nav {
     font-size: 3.5vw;
+  }
+
+  .contact nav ul li {
+    margin: 10px 0;
   }
 
   .secondary-background{
