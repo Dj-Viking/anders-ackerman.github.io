@@ -138,8 +138,9 @@ header div{ /*secondary-background container*/
 }
 
 .secondary-background{
+  display: flex;
   content: "";  
-  padding: 30px 30px 35px 1000px;  
+  padding: 30px 30px 35px 30px;  
   background-image: url('../images/mountains-resized.jpg');
   background-position: 50%;
   background-size:cover;
@@ -155,6 +156,7 @@ header div{ /*secondary-background container*/
 
 /* hero section styling start */
 .hero{
+  display: flex;
   padding: 300px;
   background-image: url('../images/open-road-resized.jpg');
   background-position: 80%;
@@ -167,6 +169,11 @@ header div{ /*secondary-background container*/
 .about-me{
   padding: 100px 60px;
   padding-top: 80px;
+}
+
+.about-me-card-flexcontainer{
+  display: flex;
+  justify-content: center;
 }
 
 .about-me h2{
@@ -185,6 +192,8 @@ header div{ /*secondary-background container*/
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   object-fit: cover;
+  height: 200px;
+  width: 200px;
 }
 
 .border-right{
@@ -205,21 +214,65 @@ header div{ /*secondary-background container*/
   margin-top: 0px;
 }
 
-/* work grid label container */
+/* work row label container */
 .work-label-flex-row{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 20px 0;
-  margin-left: 400px;
+  margin-left: 0px;
 }
 
-/* work grid labels */
-.runbuddy-label{
+/* work row labels */
+.work-header-flex-row .runbuddy-h2{
   color: var(--primary-color);
   text-shadow: 0 0 10px black;
   background-color: var(--tertiary-color);
-  border-radius: 25px;
-  padding: 20px;
-  text-align: center;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  margin-right: 0;
+  text-align: left;
+  padding: 30px 100px 30px 30px;
+  width: 100px;
+  font-size: 15px;
+}
+
+.work-header-flex-row .runbuddy-h2 p{
+  font-size: 10px;
+}
+
+.work-header-flex-row .mtr-h2{
+  color: var(--primary-color);
+  text-shadow: 0 0 10px black;
+  background-color: var(--tertiary-color);
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  margin-right: 0;
+  text-align: left;
+  padding: 30px 100px 30px 30px;
+  width: 100px;
+  font-size: 15px;
+}
+
+.work-header-flex-row .mtr-h2 p{
+  font-size: 10px;
+}
+
+.work-header-flex-row .horiseonrefactor-h2{
+  color: var(--primary-color);
+  text-shadow: 0 0 10px black;
+  background-color: var(--tertiary-color);
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  margin-right: 0;
+  text-align: left;
+  padding: 30px 100px 30px 30px;
+  width: 100px;
+  font-size: 15px;
+}
+
+.work-header-flex-row .horiseonrefactor-h2 p{
+  font-size: 10px;
 }
 
 .mtr-label{
@@ -240,8 +293,16 @@ header div{ /*secondary-background container*/
   padding: 20px;
 }
 
-.work-flex-row {
+.work-flex-column {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.work-header-flex-row {
+  display: flex;
+  justify-content: center;
 }
 
 .work h2 {
@@ -251,12 +312,15 @@ header div{ /*secondary-background container*/
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   margin-right: 0;
-  text-align: right;
+  text-align: left;
   padding: 30px;
+  width: 100px;
 }
 
 /* keyboard image */
 .work-img{
+  display: flex;
+  justify-content: center;
   object-fit: cover;
   height: 200px;
   width: 210px;
@@ -265,78 +329,60 @@ header div{ /*secondary-background container*/
 }
 
 /* my work grid start */
-.work-grid{
-  display: grid;
+.work-flex{
+  display: flex;
+  justify-content: center;
   gap: 10px;
-  grid-template-columns: repeat(3, 13rem);
+  grid-template-columns: repeat(3, 14rem);
   align-items: start;
   margin-right: 30px;
-}
-
-.grid-item-runbuddy{
-  display: flex;
-  width: 50%;
- 
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
 }
 
 .grid-item-meetthereplacements{
   display: flex;
   width: 50%;
-
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
 }
 
 .grid-item-horiseonrefactor{
   display: flex;
   width: 50%;
-
-  grid-column: 3 / span 1;
-  grid-row: 1 / span 1;
 }
 
 .runbuddy-img{
-  height: 100px;
   transition: 1s;
-  width: 100%;
-  border-radius: 10px;
-  
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 200px;
+  height: 140px;
 }
 
 .runbuddy-img:hover{
   transition: 1s;
-  height: 200px;
-  width: 200px;
 }
 
 .meetthereplacements-img{
-  height: 100px;
   transition: 1s;
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 200px;
+  height: 140px;
 }
 
 .meetthereplacements-img:hover{
   transition: 1s;
-  height: 200px;
-  width: 200%;
 }
 
 .horiseonrefactor-img{
-  height: 100px;
   transition: 1s;
-  width: 100%;
-  border-radius: 10px;
-  
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 200px;
+  height: 140px;
 }
 
 .horiseonrefactor-img:hover{
   transition: 1s;
-  height: 200px;
-  width: 200px;
+
 }
 
 .work .border-right{
@@ -371,6 +417,7 @@ header div{ /*secondary-background container*/
   background-color: var(--secondary-color);
   border-radius: 25px;
   z-index: 9999;
+  position: relative;
   text-shadow: 0 0 10px #90708C;
   transition: 1s; /*transition back from the hover state */
 }
@@ -385,7 +432,7 @@ header div{ /*secondary-background container*/
 }
 
 .contact nav{
-  margin-left: 100px;
+  margin: 0px;
 }
 
 .contact a{
@@ -458,4 +505,41 @@ footer{
 footer p{
   
   color: var(--primary-color);
+}
+
+
+/* start media query stylings */
+
+@media screen and (max-width: 980px) {
+  header{
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  .contact-span{
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  .flex-row {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .border-right {
+    display: none;
+    opacity: 0;
+  }
+
+  .work-label-flex-row{
+    flex-wrap: wrap;
+    margin: 0;
+    
+  }
+
+
 }
