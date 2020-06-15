@@ -180,21 +180,18 @@ header div{ /*secondary-background container*/
   background-color: rgba(144, 112, 140, .6);
   color: var(--primary-color);
   border-style: solid;
-  padding: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0;
   border-color: var(--primary-color);
   border-radius: 15px;
   border-width: 3px;
   box-shadow: 0 0 10px rgba(255, 255, 255, .5);
-  width: 50%;
   height: 30%;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: 30%;
-  margin-bottom: 30%;
+  margin-top: 50%;
+  margin-bottom: 0;
   align-items: center
   
 }
