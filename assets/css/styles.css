@@ -4,7 +4,7 @@
 :root{
   --primary-color: white;
   --secondary-color: #4292cccb;
-  --tertiary-color: #90708C;
+  --tertiary-color: rgb(144, 112, 140);
   
 }
 
@@ -164,6 +164,7 @@ header div{ /*secondary-background container*/
   width: 100%;
   background-attachment: fixed;
   margin: 0;
+  justify-content: center;
   position: relative;
 }
 
@@ -173,6 +174,40 @@ header div{ /*secondary-background container*/
   align-items: flex-start;
   width: 100%;
   
+}
+
+.hero-title{
+  background-color: rgba(144, 112, 140, .6);
+  color: var(--primary-color);
+  border-style: solid;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-color: var(--primary-color);
+  border-radius: 15px;
+  border-width: 3px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, .5);
+  width: 100%;
+  height: 30%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 30%;
+  margin-bottom: 30%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.hero-title h2 {
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-title h3 {
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
 }
 
 .hero img{ /* this is to create a container space because the background was overflowing and wouldnt appear unless i added padding to the div containing no content or space, background would only appear if i placed padding but this would cause overflow in different media queries */
