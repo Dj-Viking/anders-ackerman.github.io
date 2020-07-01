@@ -192,6 +192,8 @@ header div{ /*secondary-background container*/
   flex-direction: column;
   margin-top: 30%;
   margin-bottom: 0;
+  margin-left: 33%;
+  margin-right: 33%;
   align-items: center
   
 }
@@ -407,42 +409,109 @@ header div{ /*secondary-background container*/
   width: 50%;
 }
 
-.runbuddy-img{
+.img1{
   transition: 1s;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   width: 200px;
   height: 140px;
+  position: relative;
 }
 
-.runbuddy-img:hover{
-  transition: 1s;
+.img1::after{
+  content: "";
+  opacity: .1;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition: 0.5s;
 }
 
-.meetthereplacements-img{
+.img1:hover::after{
+  background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
+  transition: 0.5s;
+  opacity: 1;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.img2::after{
+  content: "";
+  opacity: .1;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition: 0.5s;
+}
+
+.img2:hover::after{
+  background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
+  transition: 0.5s;
+  opacity: 1;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.img3::after{
+  content: "";
+  opacity: .1;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition: 0.5s;
+}
+
+.img3:hover::after{
+  background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
+  transition: 0.5s;
+  opacity: 1;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+
+.img2{
   transition: 1s;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   width: 200px;
   height: 140px;
+  position: relative;
 }
 
+/*
 .meetthereplacements-img:hover{
   transition: 1s;
 }
+*/
 
-.horiseonrefactor-img{
+.img3{
   transition: 1s;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   width: 200px;
   height: 140px;
+  position: relative;
 }
-
+/*
 .horiseonrefactor-img:hover{
   transition: 1s;
 
 }
+*/
 
 .work .border-right{
   margin-left: 55px;
