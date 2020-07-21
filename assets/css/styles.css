@@ -152,6 +152,18 @@ header div{ /*secondary-background container*/
   margin-right: 35px;
   
 }
+
+#aboutme-anchor{
+  cursor: pointer;
+}
+
+#work-anchor {
+  cursor: pointer;
+}
+
+#contact-anchor{
+  cursor: pointer;
+}
 /* header styling end */
 
 /* hero section styling start */
