@@ -6,6 +6,7 @@ const aboutMeAnchorEl = document.querySelector("#aboutme-anchor");
 
 const workEl = document.querySelector("#work-id");
 const workAnchorEl = document.querySelector("#work-anchor");
+const workAnchor2El = document.querySelector("#work-idTwo")
 
 const contactEl = document.querySelector("#contact-id");
 const contactAnchorEl = document.querySelector("#contact-anchor")
@@ -27,6 +28,13 @@ function scrollToWork(event){
     });
 }
 
+function scrollToWork2(event){
+    console.log(event.target);
+    workEl.scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
 function scrollToContact(event){
     console.log(event.target);
     contactEl.scrollIntoView({
@@ -36,6 +44,7 @@ function scrollToContact(event){
 
 aboutMeAnchorEl.addEventListener("mousedown", scrollToAbout);
 workAnchorEl.addEventListener("mousedown", scrollToWork);
+workAnchor2El.addEventListener("mousedown", scrollToWork2);
 contactAnchorEl.addEventListener("mousedown", scrollToContact);
 
 
