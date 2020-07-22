@@ -4,7 +4,7 @@ const particles = [];
 function setup() {
     const canvasDivEl = document.querySelector("#canvas-div");
     let width = canvasDivEl.offsetWidth - 15;
-    let height = canvasDivEl.offsetHeight + 120;
+    let height = canvasDivEl.offsetHeight + 100;
     const canvas = createCanvas(width, height);
     canvas.parent('canvas-div');
 
