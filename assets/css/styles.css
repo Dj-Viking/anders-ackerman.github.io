@@ -867,6 +867,8 @@ footer p{
   .hide-before-small-media{
     display: inline-block;
     margin-top: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
   .hide-after-small-media{
     display: none;
