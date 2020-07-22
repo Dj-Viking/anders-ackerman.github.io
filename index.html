@@ -9,50 +9,56 @@
     </head>
     <!-- body start -->
     <body>
-        <!-- header start -->
-        <header>
-            <h1>
-                Anders Ackerman
-            </h1>
-            <!-- navigation bar start -->
-            <nav>
-                <ul>
-                    <li>
-                        <!-- Anchor About Me -->
-                        <a id="aboutme-anchor">About Me</a>
-                    </li>
-                    <li>
-                        <!-- Anchor Work -->
-                        <a id="work-anchor">Work</a>
-                    </li>
-                    <li>
-                        <!-- Anchor Contact -->
-                        <a id="contact-anchor">Contact Me</a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- navigation bar end -->
-            <!-- creating secondary background behind header -->
-            <div class="secondary-background"></div>
-        </header>
-        <!-- header end -->
-        
-        <!-- hero section start -->
-        <section class="hero-flex">
-            <section class="hero">
-                <!-- Hero title -->
-                <div class="hero-title">
-                    <h2>
-                        Anders Ackerman's
-                    </h2>
-                    <h3>
-                        Software Development Portfolio
-                    </h3>
-                </div>
-                <!-- hero image of open road -->    
-                <img src="assets/images/open-road-resized.jpg"/>
+        <div id="canvas">
+            <!-- header start -->
+            <header>
+                <h1>
+                    Anders Ackerman
+                </h1>
+                <!-- navigation bar start -->
+                <nav>
+                    <ul>
+                        <li>
+                            <!-- Anchor About Me -->
+                            <a id="aboutme-anchor">About Me</a>
+                        </li>
+                        <li>
+                            <!-- Anchor Work -->
+                            <a id="work-anchor">Work</a>
+                        </li>
+                        <li>
+                            <!-- Anchor Contact -->
+                            <a id="contact-anchor">Contact Me</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- navigation bar end -->
+                <!-- creating secondary background behind header -->
+                <div class="secondary-background"></div> 
+            </header>
+            <!-- header end -->
+            
+            <!-- hero section start -->
+            <section class="hero-flex">
+                <section class="hero">
+                    
+                    <!-- Hero title -->
+                    <div class="hero-title">
+                        <div id="canvas-div">
+                            
+                        </div>
+                        <h2>
+                            Anders Ackerman's
+                        </h2>
+                    </br>
+                        <h3>
+                            Software Development Portfolio
+                        </h3>
+                    </div>
+                    <!-- hero image of open road -->    
+                </section>
             </section>
-        </section>    
+         </div>    
         <!-- hero section end -->
 
         <!-- about me section start -->
@@ -99,12 +105,12 @@
                 <h2 class="img1-h2">
                     Nomadica
                     <p>
-                        Group Project
+                        Group Project #1 
                     </p>
                 </h2>
                 <!-- work img1 image -->
-                <a class="img1" id="img-1" target="_blank" href="https://github.com/Dj-Viking/meetTheReplacements">
-                    <img class="img1" src="./assets/images/meetthereplacements.JPG" alt="meet the replacements rehearsal photo of the set piece with the programmed LEDs inside"/>
+                <a class="img1" id="img-1" target="_blank" href="https://dj-viking.github.io/Nomadica/">
+                    <img class="img1" src="./assets/images/nomadica-img.png" alt="nomadica page screenshot"/>
                 </a>
             </div>
 
@@ -225,5 +231,8 @@
         <!-- footer section end -->
     </body>
     <!-- body end -->
+    <script src="assets/js/p5.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+    <script src="assets/js/particles.js"></script>
     <script src="assets/js/script.js"></script>
 </html>

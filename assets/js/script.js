@@ -42,6 +42,12 @@ function scrollToContact(event){
     });
 }
 
+function elementSniffer(event){
+    console.log(event.target);
+    
+}
+
+document.addEventListener("click", elementSniffer);
 aboutMeAnchorEl.addEventListener("mousedown", scrollToAbout);
 workAnchorEl.addEventListener("mousedown", scrollToWork);
 workAnchor2El.addEventListener("mousedown", scrollToWork2);
