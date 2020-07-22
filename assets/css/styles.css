@@ -161,6 +161,14 @@ header div{ /*secondary-background container*/
   cursor: pointer;
 }
 
+.hide-before-small-media {
+  display: none;
+}
+
+.hide-after-small-media {
+  display: inline-block
+}
+
 #work-idTwo {
   background-color: var(--secondary-color);
   border-radius: 25px;
@@ -169,6 +177,7 @@ header div{ /*secondary-background container*/
   transition: 1s;
   padding: 0 20px;
   cursor: pointer;
+  color: white;
   box-shadow: 0px 0px 10px 5px var(--tertiary-color)
 }
 
@@ -839,5 +848,22 @@ footer p{
 
   .secondary-background{
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .hide-before-small-media{
+    display: inline-block;
+    margin-top: 10px !important;
+  }
+  .hide-after-small-media{
+    display: none;
+    
+    padding-top: 0px;
+  }
+
+  .check-it-out {
+    margin-top: 0;
+    padding-top: 0 !important;
   }
 }
