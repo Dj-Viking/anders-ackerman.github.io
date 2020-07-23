@@ -207,7 +207,7 @@ header div{ /*secondary-background container*/
 /* hero section styling start */
 .hero{
   
-  height: 100%;
+  height: 10%;
   background-image: url('../images/open-road-resized.jpg');
   background-position: 80%;
   background-size: cover;
