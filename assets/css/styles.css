@@ -357,6 +357,23 @@ header div{ /*secondary-background container*/
 }
 
 /* work row labels */
+.work-header-flex-row .img0-h2{
+  color: var(--primary-color);
+  text-shadow: 0 0 10px black;
+  background-color: var(--tertiary-color);
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  margin-right: 0;
+  text-align: left;
+  padding: 20px 120px 30px 20px;
+  width: 100px;
+  font-size: 15px;
+}
+
+.work-header-flex-row .img0-h2 p{
+  font-size: 10px;
+}
+
 .work-header-flex-row .img1-h2{
   color: var(--primary-color);
   text-shadow: 0 0 10px black;
@@ -496,6 +513,10 @@ header div{ /*secondary-background container*/
 }
 
 /* my work grid start */
+.desc-pad-top {
+  padding-top: 5px;
+}
+
 .work-flex{
   display: flex;
   justify-content: center;
@@ -539,6 +560,37 @@ header div{ /*secondary-background container*/
 }
 
 .img1:hover::after{
+  background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
+  transition: 0.5s;
+  opacity: 1;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.img0{
+  transition: 1s;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 200px;
+  height: 140px;
+  position: relative;
+}
+
+.img0::after{
+  content: "";
+  opacity: .1;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition: 0.5s;
+}
+
+.img0:hover::after{
   background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
   transition: 0.5s;
   opacity: 1;
