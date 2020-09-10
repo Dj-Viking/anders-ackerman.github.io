@@ -9,8 +9,3 @@ I'm currently learning the web development sphere of HTML, CSS, Javascript, and 
 
 ## Optimization
 This Page has been optimized for various screens ranging from the regular laptop screen all the way down to the iPhone.
-
-## Screenshot
-
-Screenshot saves kinda weird as an entire firefox page screenshot lol 🤷🏼‍♂️
-![Image of Application Page](./assets/images/page-screenshot.jpg)
