@@ -28,6 +28,26 @@
   display: flex;
 }
 
+/* github repo buttons */
+.project-button-container {
+  display: flex;
+}
+
+.project-btn {
+  cursor: pointer;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: 1s;
+}
+
+.project-btn:hover {
+  transition: 1s;
+  color: rgb(94, 0, 245);
+  background-color: var(--primary-color);
+}
 
 /* flex row declarations */
 
