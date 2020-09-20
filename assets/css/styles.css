@@ -664,7 +664,21 @@ header div{ /*secondary-background container*/
 }
 
 /* currently cube wave */
-.img3{ 
+.img3-pic{ 
+  transition: 1s;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 800px;
+  height: 400px;
+  position: relative;
+  /* 
+    property will change inside the breakpoint 
+    keeping iframe for bigger widths and then image for the smaller widths 
+  */
+  /* hide before breakpoint */
+  display: none;
+}
+.img3-iframe{ 
   transition: 1s;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -673,12 +687,15 @@ header div{ /*secondary-background container*/
   position: relative;
 }
 
+
 .img3:hover::after{
   background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
   transition: 0.5s;
   opacity: 1;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
+  /* hide before breakpoint */
+  display: none;
 }
 
 .img3::after{
@@ -693,6 +710,8 @@ header div{ /*secondary-background container*/
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   transition: 0.5s;
+  /* hide before breakpoint */
+  display: none;
 }
 
 .project-button-container {
@@ -914,9 +933,14 @@ footer p{
     width: 765px;
     height: 400px;
   }
-  .img3 {
+  .img3-iframe {
     width: 800px;
     height: 400px;
+  }
+  .img3-pic {
+    width: 800px;
+    height: 400px;
+    display: none;
   }
   .img4 {
     width: 765px;
@@ -1006,6 +1030,10 @@ footer p{
     width: 460px;
     height: 300px;
   }
+  .work-img-matrix {
+    width: 460px;
+    height: 300px;
+  }
   .img0 {
     width: 450px;
     height: 300px;
@@ -1018,9 +1046,15 @@ footer p{
     width: 450px;
     height: 300px;
   }
-  .img3 {
+  .img3-iframe {
     width: 450px;
     height: 300px;
+    display: none;
+  }
+  .img3-pic {
+    width: 450px;
+    height: 300px;
+    display: block;
   }
   .img4 {
     width: 450px;
@@ -1066,9 +1100,15 @@ footer p{
     width: 250px;
     height: 200px;
   }
-  .img3 {
+  .img3-iframe {
     width: 250px;
     height: 200px;
+    display: none;
+  }
+  .img3-pic {
+    width: 250px;
+    height: 200px;
+    display: block;
   }
   .img4 {
     width: 250px;
@@ -1118,9 +1158,15 @@ footer p{
     width: 200px;
     height: 150px;
   }
-  .img3 {
+  .img3-frame {
     width: 200px;
     height: 150px;
+    display: none;
+  }
+  .img3-pic {
+    width: 200px;
+    height: 150px;
+    display: block;
   }
   .img4 {
     width: 200px;
@@ -1191,9 +1237,15 @@ footer p{
     width: 150px;
     height: 150px;
   }
-  .img3 {
+  .img3-iframe {
     width: 150px;
     height: 150px;
+    display: none;
+  }
+  .img3-pic {
+    width: 150px;
+    height: 150px;
+    display: block;
   }
   .img4 {
     width: 150px;
