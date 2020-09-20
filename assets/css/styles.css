@@ -1084,6 +1084,11 @@ footer p{
     margin-right: 5%;
   }
 
+  .me-picture {
+    width: 160px !important;
+    height: 150px !important;
+  }
+
   .work-img {
     width: 260px;
     height: 200px;
