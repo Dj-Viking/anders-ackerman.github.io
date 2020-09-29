@@ -49,6 +49,20 @@
   background-color: var(--primary-color);
 }
 
+.more-btn {
+  cursor: pointer;
+  font-size: 30px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 10px;
+  transition: .2s;
+}
+.more-btn:hover {
+  transition: .2s;
+  color: rgb(94, 0, 245);
+  background-color: var(--primary-color);
+}
 /* flex row declarations */
 
 /* body */
