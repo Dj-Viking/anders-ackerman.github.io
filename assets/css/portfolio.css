@@ -1,0 +1,21 @@
+/* main layout color variables */
+:root{
+  --primary-color: white;
+  --secondary-color: #4292cccb;
+  --tertiary-color: rgb(144, 112, 140);
+  
+}
+
+.back-to-portfolio {
+  cursor: pointer;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.back-to-portfolio:hover {
+  transition: 1s;
+  color: rgb(94, 0, 245);
+  background-color: var(--primary-color);
+}
