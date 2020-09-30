@@ -7,6 +7,8 @@
 }
 
 .back-to-portfolio {
+  float: right;
+  /* transform: translateX(-20px);  */
   cursor: pointer;
   color: var(--primary-color);
   background-color: var(--secondary-color);
