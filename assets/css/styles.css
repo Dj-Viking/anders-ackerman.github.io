@@ -798,6 +798,36 @@ header div{ /*secondary-background container*/
   border-bottom-right-radius: 25px;
   transition: 0.5s;
 }
+.img6{
+  transition: 1s;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 800px;
+  height: 400px;
+  position: relative;
+}
+
+.img6:hover::after{
+  background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
+  transition: 0.5s;
+  opacity: 1;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.img6::after{
+  content: "";
+  opacity: .1;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition: 0.5s;
+}
 
 .work .border-right{
   margin-left: 55px;
@@ -964,6 +994,10 @@ footer p{
     width: 765px;
     height: 400px;
   }
+  .img6 {
+    width: 765px;
+    height: 400px;
+  }
 
   header{
     justify-content: center;
@@ -1078,6 +1112,10 @@ footer p{
     width: 450px;
     height: 300px;
   }
+  .img6 {
+    width: 450px;
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 575px){
@@ -1137,6 +1175,10 @@ footer p{
     width: 250px;
     height: 200px;
   }
+  .img6 {
+    width: 250px;
+    height: 200px;
+  }
 
   header{
     padding-left: 0;
@@ -1192,6 +1234,10 @@ footer p{
     height: 150px;
   }
   .img5 {
+    width: 200px;
+    height: 150px;
+  }
+  .img6 {
     width: 200px;
     height: 150px;
   }
@@ -1271,6 +1317,10 @@ footer p{
     height: 150px;
   }
   .img5 {
+    width: 150px;
+    height: 150px;
+  }
+  .img6 {
     width: 150px;
     height: 150px;
   }
