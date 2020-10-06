@@ -85,6 +85,7 @@ header{
   padding: 20px 35px;
   position: relative;
   width: 100%;
+  /* clip-path: polygon(0 9%, 37% 0, 100% 14%, 100% 90%, 24% 100%, 0 90%); */
 }
 
 header h1{
@@ -250,6 +251,7 @@ header div{ /*secondary-background container*/
   margin: 0;
   justify-content: center;
   position: relative;
+  clip-path: polygon(0 0%, 37% 0, 100% 0%, 100% 90%, 24% 100%, 0 90%);
 }
 
 .hero-flex{
@@ -332,6 +334,7 @@ header div{ /*secondary-background container*/
 .about-me{
   padding: 100px 60px;
   padding-top: 80px;
+  /* clip-path: polygon(0 10%, 37% 0, 100% 10%, 100% 90%, 63% 100%, 0 90%); */
 }
 
 .about-me-card-flexcontainer{
@@ -1198,6 +1201,12 @@ footer p{
 
   .secondary-background{
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  header nav ul li {
+    margin: 0;
   }
 }
 
