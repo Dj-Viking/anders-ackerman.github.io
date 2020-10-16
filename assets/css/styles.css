@@ -5,7 +5,6 @@
   --primary-color: white;
   --secondary-color: #4292cccb;
   --tertiary-color: rgb(144, 112, 140);
-  
 }
 
 /* universal selector of all items to overwrite the default html styling */
@@ -115,14 +114,12 @@ header h1:hover{
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   transition: 1s;
-  
 }
 
 header a{
   padding: 0 30px;
   text-decoration: none;
   color: var(--primary-color);
-  
 }
 
 header nav ul li{
@@ -196,7 +193,6 @@ header div{ /*secondary-background container*/
   border-radius: 25px;
   margin-left: 35px;
   margin-right: 35px;
-  
 }
 
 #aboutme-anchor{
@@ -252,7 +248,6 @@ header div{ /*secondary-background container*/
 
 /* hero section styling start */
 .hero{
-  
   height: 10%;
   background-image: url('../images/open-road-resized.jpg');
   background-position: 80%;
@@ -270,7 +265,6 @@ header div{ /*secondary-background container*/
   display: flex;
   align-items: flex-start;
   width: 100%;
-  
 }
 
 .hero-title{
@@ -294,7 +288,6 @@ header div{ /*secondary-background container*/
   align-items: center;
   z-index: 1;
   opacity: .9;
-  
 }
 
 #canvas-div {

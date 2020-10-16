@@ -1,6 +1,4 @@
 const particles = [];
-
-
 function setup() {
     const canvasDivEl = document.querySelector("#canvas-div");
     let width = canvasDivEl.offsetWidth - 15;
@@ -8,45 +6,19 @@ function setup() {
     const canvas = createCanvas(width, height);
     canvas.parent('canvas-div');
 
-   const particlesLength = Math.floor(window.innerWidth / 50);
+    const particlesLength = Math.floor(window.innerWidth / 50);
 
-   for (let i = 0; i < particlesLength; i++){
-    particles.push(new Particle());
-   }
-    
+    for (let i = 0; i < particlesLength; i++){
+        particles.push(new Particle());
+    }
 }
-
-
-
 function draw() {
-
     background('rgba(66, 146, 206, .2)');
     particles.forEach((p, index) => {
         p.update();
         p.draw();
         p.checkParticles(particles.slice(index));
     });
-    
-    // if (mouseIsPressed) {
-    //     fill(255);
-    // } else {
-    //     fill(155);
-    // }
-    // //draw circle, this is over the top left circle in the img pattern
-    // //top left
-    // circle(490, 270, 50);
-    // //bottom left
-    // circle(490, 425.5, 50);
-    // //top right
-    // circle(760, 270, 50);
-    // //bottom right
-    // circle(760, 425.5, 50);
-    // //top
-    // circle(624, 194, 50);
-    // //bottom
-    // circle(624, 504, 50);
-
-    
 }
 
 class Particle {
